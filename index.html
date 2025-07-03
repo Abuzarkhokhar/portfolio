@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>protfolio website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Kalnia+Glaze:wght@100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Style+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+       font-family: "Amiri", serif;
+}
+.protfolio{
+    min-height: 100vh;
+    width: 100%;
+    display: flex; 
+
+}
+.navlist{
+    display: flex;
+    gap: 4.5rem; 
+    height: 15vh; 
+    width: 100%;  
+justify-content: center;
+align-items: center;
+position: fixed;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none; 
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+transition:5s ease;
+}
+.left-container,.right-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.left-container{
+    background: #313131;
+    width: 72%;
+padding-left: 3rem;
+}
+.right-container{
+    background: linear-gradient(-45deg,#3877ff,#262525 70%);
+    width: 30%;
+
+}
+.icons .fa-brands{
+    color: #bbb;
+font-size: 1.7rem;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+gap: 3rem;
+height:100vh;
+}
+.contant{
+    margin-left: 4rem;
+}
+.contant .intro{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.contant .intro span{
+    color:#5DB9EE;
+}
+.contant .detail{
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+
+}
+.contant h1{
+    font-size: 4rem;
+    color: #5DB9EE;
+}
+.btn-container button{
+    border: .1.1rem solid #5DB9EE;
+    font-size: 1.1rem;
+    padding: .8rem 1.3rem;
+border-radius: .5rem;
+cursor: pointer;
+transition: 5s ease;
+}
+button:nth-child(1){
+background: #5DB9EE;
+color: #313131;
+}
+button:nth-child(2){
+    color:#3377ff;
+    background: transparent;
+margin-left: 2rem;
+}
+button:nth-child(1):hover{
+    background: transparent;
+    color: #5DB9EE;
+}
+button:nth-child(2):hover{
+    background:#3877ff;
+    color: #262525;
+}
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff,#3877ff);
+    -webkit-text-fill-color: transparent;
+}
+.desing .circle{
+    aspect-ratio: 1.0;
+    position: absolute;
+    border-radius: 50%;
+    top: 56%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+}
+.circle:nth-child(1) {
+background: linear-gradient( 90deg,transparent 50%,#262525 50%);
+width: 38em;
+}
+.circle:nth-child(2){
+    background: white;
+    width: 30rem;
+    background-image: url(./image/0382a9a1-5433-4b6e-ba3a-232821f31577.jpg);
+    background-size: 89%;
+background-repeat: no-repeat;
+border: 1rem solid white;
+box-shadow: 0 0 1rem #fff,
+inset 0 0 1rem #fff,
+0 0 2rem #3877ff,
+inset 0 0 2rem #3377ff,
+0 0 4rem #3877ff,
+inset 0 0 4rem #3877ff
+;
+
+}
+.navlist li a::after, .navlist .active::after{
+    content:"";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+height: .1rem;
+left: 0;
+bottom: -5px;
+transform: scaleX(0);
+transform-origin: bottom right;
+
+}
+.navlist li a:hover::after, .navlist .active::after{
+    transform: scaleX(1);
+    transform-origin: bottom left
+
+}
+</style>
+
+</head>
+<body>
+    <div class="protfolio">
+    <ul class="navlist">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Wrok</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">service</a></li>
+        
+
+    </ul>
+<div class="left-container">
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-codepen"></i>
+    </div>
+    <div class="contant">
+        <p class="intro">Hi ! I am <span> ABUZAR khokhar </span></p>
+   <h1>Web Developer.</h1>
+   <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisquam deserunt ratione rem. Sequi ipsam optio iure! Provident ad est architecto magnam dolorem? Pariatur itaque eius impedit dolorum voluptatibus sed.<p>
+   <div class="btn-container">
+    <button>Hier me </button>
+<button>View project</button>   
+</div>
+    </div>
+</div>
+<div class="right-container"></div>
+<div class="desing">
+<div class="circle"></div>
+<div class="circle"></div>
+</div
+</div>
+</body>
+</html>
